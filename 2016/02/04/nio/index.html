@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>ming-liu</title>
+  <title>NIO | ming-liu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ming-liu">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="1、Unix下5中IO模型 【1.1】 阻塞式IO(blocking I/O)      【1.2】 非阻塞式IO(nonblocking I/O)      【1.3】 I/O复用(I/O multiplexing select/poll)      【1.4】 信号驱动式IO(signal-driven I/O)      【1.5】 异步IO()      【1.6】 5中I/O模型对比">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NIO">
+<meta property="og:url" content="http://yoursite.com/2016/02/04/nio/index.html">
 <meta property="og:site_name" content="ming-liu">
-<meta property="og:description">
+<meta property="og:description" content="1、Unix下5中IO模型 【1.1】 阻塞式IO(blocking I/O)      【1.2】 非阻塞式IO(nonblocking I/O)      【1.3】 I/O复用(I/O multiplexing select/poll)      【1.4】 信号驱动式IO(signal-driven I/O)      【1.5】 异步IO()      【1.6】 5中I/O模型对比">
+<meta property="og:image" content="http://yoursite.com/images/bio.png">
+<meta property="og:image" content="http://yoursite.com/images/nbio.png">
+<meta property="og:image" content="http://yoursite.com/images/multi.png">
+<meta property="og:image" content="http://yoursite.com/images/signal.png">
+<meta property="og:image" content="http://yoursite.com/images/aio.png">
+<meta property="og:image" content="http://yoursite.com/images/cp.png">
+<meta property="og:updated_time" content="2016-02-04T06:39:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ming-liu">
-<meta name="twitter:description">
+<meta name="twitter:title" content="NIO">
+<meta name="twitter:description" content="1、Unix下5中IO模型 【1.1】 阻塞式IO(blocking I/O)      【1.2】 非阻塞式IO(nonblocking I/O)      【1.3】 I/O复用(I/O multiplexing select/poll)      【1.4】 信号驱动式IO(signal-driven I/O)      【1.5】 异步IO()      【1.6】 5中I/O模型对比">
   
     <link rel="alternate" href="/atom.xml" title="ming-liu" type="application/atom+xml">
   
@@ -60,9 +67,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-nio" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-nio" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/02/04/nio/" class="article-date">
   <time datetime="2016-02-04T00:33:59.000Z" itemprop="datePublished">2016-02-04</time>
@@ -75,8 +80,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/04/nio/">NIO</a>
+    <h1 class="article-title" itemprop="name">
+      NIO
     </h1>
   
 
@@ -100,126 +105,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-written-at-the-begining-of-2016" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/02/03/written-at-the-begining-of-2016/" class="article-date">
-  <time datetime="2016-02-03T14:50:19.000Z" itemprop="datePublished">2016-02-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/03/written-at-the-begining-of-2016/">written at the begining of 2016</a>
-    </h1>
+    <a href="/2016/02/03/written-at-the-begining-of-2016/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">written at the begining of 2016</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>2015惨到不想回顾。</p>
-<p>想要一个全新的2016。改变</p>
-<p>1、换一份工作,3/m</p>
-<h4 id="u6280_u672F_u65B9_u9762"><a href="#u6280_u672F_u65B9_u9762" class="headerlink" title="技术方面"></a>技术方面</h4><ul>
-<li>基础<ul>
-<li>常用的数据结构(HashMap、HashTable、CocurrentHashMap)</li>
-<li>并发编程</li>
-<li>JVM</li>
-</ul>
-</li>
-<li>进阶<ul>
-<li>组件<ul>
-<li>Spring</li>
-<li>Struts</li>
-<li>Ibatis</li>
-<li>Hibernate</li>
-<li>Nodejs</li>
-</ul>
-</li>
-<li>NIO/Netty</li>
-<li>中间件<ul>
-<li>RPC(thrift、pigeon)</li>
-<li>Cache(Memocached、Redis)    </li>
-<li>Message(swallow)</li>
-<li>分布式Zookeeper</li>
-</ul>
-</li>
-<li>DB<ul>
-<li>SQL(mysql、oracle)</li>
-<li>NOSQL(MongoDB)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/03/written-at-the-begining-of-2016/" data-id="cik7wcp9u00012e0fyft1r3bu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/02/03/hello-world/" class="article-date">
-  <time datetime="2016-02-03T14:18:58.000Z" itemprop="datePublished">2016-02-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/03/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/03/hello-world/" data-id="cik7wcp9i00002e0fszgbgny5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
