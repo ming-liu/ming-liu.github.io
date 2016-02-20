@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>ming-liu</title>
+  <title>centos_wordpress | ming-liu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ming-liu">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Aliyun Ecs Centos 64bit .install wordpress1、install apache1.1 查询是否安装，若没有返回信息则没有安装。    1rpm -qa httpd
+1.2 安装apache。    1yum install httpd -y
+1.3 启动    123service httpd startservice httpd stopservice ht">
+<meta property="og:type" content="article">
+<meta property="og:title" content="centos_wordpress">
+<meta property="og:url" content="http://yoursite.com/2016/02/18/centos-wordpress/index.html">
 <meta property="og:site_name" content="ming-liu">
-<meta property="og:description">
+<meta property="og:description" content="Aliyun Ecs Centos 64bit .install wordpress1、install apache1.1 查询是否安装，若没有返回信息则没有安装。    1rpm -qa httpd
+1.2 安装apache。    1yum install httpd -y
+1.3 启动    123service httpd startservice httpd stopservice ht">
+<meta property="og:updated_time" content="2016-02-20T02:15:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ming-liu">
-<meta name="twitter:description">
+<meta name="twitter:title" content="centos_wordpress">
+<meta name="twitter:description" content="Aliyun Ecs Centos 64bit .install wordpress1、install apache1.1 查询是否安装，若没有返回信息则没有安装。    1rpm -qa httpd
+1.2 安装apache。    1yum install httpd -y
+1.3 启动    123service httpd startservice httpd stopservice ht">
   
     <link rel="alternate" href="/atom.xml" title="ming-liu" type="application/atom+xml">
   
@@ -60,9 +67,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-centos-wordpress" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-centos-wordpress" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/02/18/centos-wordpress/" class="article-date">
   <time datetime="2016-02-18T05:10:40.000Z" itemprop="datePublished">2016-02-18</time>
@@ -75,8 +80,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/18/centos-wordpress/">centos_wordpress</a>
+    <h1 class="article-title" itemprop="name">
+      centos_wordpress
     </h1>
   
 
@@ -108,168 +113,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-nio" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/02/04/nio/" class="article-date">
-  <time datetime="2016-02-04T00:33:59.000Z" itemprop="datePublished">2016-02-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/04/nio/">NIO</a>
-    </h1>
+    <a href="/2016/02/04/nio/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">NIO</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1_u3001Unix_u4E0B5_u4E2DIO_u6A21_u578B"><a href="#1_u3001Unix_u4E0B5_u4E2DIO_u6A21_u578B" class="headerlink" title="1、Unix下5中IO模型"></a>1、Unix下5中IO模型</h3><p><strong> 【1.1】 阻塞式IO(blocking I/O) </strong><br>    <img src="images/bio.png" style="width:600px;"><br><strong> 【1.2】 非阻塞式IO(nonblocking I/O) </strong><br>    <img src="images/nbio.png" style="width:600px;"><br><strong> 【1.3】 I/O复用(I/O multiplexing select/poll) </strong><br>    <img src="images/multi.png" style="width:600px;"><br><strong> 【1.4】 信号驱动式IO(signal-driven I/O) </strong><br>    <img src="images/signal.png" style="width:600px;"><br><strong> 【1.5】 异步IO() </strong><br>    <img src="images/aio.png" style="width:600px;"><br><strong> 【1.6】 5中I/O模型对比 </strong><br>    <img src="images/cp.png" style="width:600px;"></p>
-<h3 id="2_u3001Java_NIO"><a href="#2_u3001Java_NIO" class="headerlink" title="2、Java NIO"></a>2、Java NIO</h3><p>Java NIO基于I/O复用技术的非阻塞I/O,不是异步I/O,1.4和1.5 update10之前的Selector基于select/poll，后使用epoll替换了select/poll 。NIO类库支持非阻塞读和写操作，相比于之前的同步阻塞读和写，是异步的。JDK1.7提供NIO2.0新增异步I/O。</p>
-<h3 id="3_u3001epoll_u76F8_u5BF9_u4E8Eselect/poll_u7684_u4F18_u52BF"><a href="#3_u3001epoll_u76F8_u5BF9_u4E8Eselect/poll_u7684_u4F18_u52BF" class="headerlink" title="3、epoll相对于select/poll的优势"></a>3、epoll相对于select/poll的优势</h3><p><strong> 【3.1】 </strong> select最大的缺陷就是单个进程所打开的socket描述符(FD)是有一定限制的，FD_SETSIZE默认是1024。epoll没有限制。</p>
-<p><strong> 【3.2】 </strong> 传统select/poll的另一个致命弱点，就是每次调用都会线性扫描所有socket集合，及时只有很少部分活跃。epoll只扫描活跃socket。</p>
-<p><strong> 【3.3】 </strong> 无论是select、poll还是epoll都需要内核把FD消息通知给用户空间，如何避免内存复制就显得非常重要，epoll是通过内核和用户空间mmap同一块内存来实现。</p>
-<p><strong> 【3.4】 </strong> epoll的api更简单。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/04/nio/" data-id="cikuhu6870002p2jjfjd4noan" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-written-at-the-begining-of-2016" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/02/03/written-at-the-begining-of-2016/" class="article-date">
-  <time datetime="2016-02-03T14:50:19.000Z" itemprop="datePublished">2016-02-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/03/written-at-the-begining-of-2016/">written at the begining of 2016</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>2015惨到不想回顾。</p>
-<p>想要一个全新的2016。改变</p>
-<p>1、换一份工作,3/m</p>
-<h4 id="u6280_u672F_u65B9_u9762"><a href="#u6280_u672F_u65B9_u9762" class="headerlink" title="技术方面"></a>技术方面</h4><ul>
-<li>基础<ul>
-<li>常用的数据结构(HashMap、HashTable、CocurrentHashMap)</li>
-<li>并发编程</li>
-<li>JVM</li>
-</ul>
-</li>
-<li>进阶<ul>
-<li>组件<ul>
-<li>Spring</li>
-<li>Struts</li>
-<li>Ibatis</li>
-<li>Hibernate</li>
-<li>Nodejs</li>
-</ul>
-</li>
-<li>NIO/Netty</li>
-<li>中间件<ul>
-<li>RPC(thrift、pigeon)</li>
-<li>Cache(Memocached、Redis)    </li>
-<li>Message(swallow)</li>
-<li>分布式Zookeeper</li>
-</ul>
-</li>
-<li>DB<ul>
-<li>SQL(mysql、oracle)</li>
-<li>NOSQL(MongoDB)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/03/written-at-the-begining-of-2016/" data-id="cikuhu6850001p2jjrscs9aoa" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/02/03/hello-world/" class="article-date">
-  <time datetime="2016-02-03T14:18:58.000Z" itemprop="datePublished">2016-02-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/03/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/03/hello-world/" data-id="cikuhu6880003p2jj0stglcut" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
