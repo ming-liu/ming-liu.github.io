@@ -62,6 +62,245 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-java-interview" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/12/java-interview/" class="article-date">
+  <time datetime="2016-03-12T09:52:31.000Z" itemprop="datePublished">2016-03-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/12/java-interview/">java-interview</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>金额<br>分布式缓存<br>大并发<br>lock<br>内存模型</p>
+<h4 id="1_u3001Servlet_u751F_u547D_u5468_u671F"><a href="#1_u3001Servlet_u751F_u547D_u5468_u671F" class="headerlink" title="1、Servlet生命周期"></a>1、Servlet生命周期</h4><pre><code>a) 
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/12/java-interview/" data-id="cim4ozz9l0005qo0f34mi9dme" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-architectrue" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/10/architectrue/" class="article-date">
+  <time datetime="2016-03-10T11:50:00.000Z" itemprop="datePublished">2016-03-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/10/architectrue/">architectrue</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>架构师<ul>
+<li>HA</li>
+<li>分布式</li>
+<li>缓存</li>
+<li>mysql</li>
+<li>final finally finalize</li>
+<li>final后return</li>
+<li>class加载</li>
+</ul>
+</li>
+</ul>
+<p>1、了解mysql索引原理。<br>2、研读过Rpc框架部分源码。<br>3、了解NIO/Netty。<br>4、熟悉常用设计模式。<br>5、消息队列、缓存。(TODO)<br>6、JVM性能调优。<br>7、了解分布式。<br>8、了解签名、加解密。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/10/architectrue/" data-id="cim4ozz8x0000qo0fx1zu5uvn" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-jvm" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/02/jvm/" class="article-date">
+  <time datetime="2016-03-02T05:56:04.000Z" itemprop="datePublished">2016-03-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/02/jvm/">深入理解Java虚拟机笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/02/jvm/" data-id="cim4ozz9j0004qo0fihrlp6wm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-multi-thread-interview" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/01/multi-thread-interview/" class="article-date">
+  <time datetime="2016-02-29T23:27:58.000Z" itemprop="datePublished">2016-03-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/01/multi-thread-interview/">Java多线程面试题汇集</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1_u3001Thread-sleep_u3001Thread-yield_u548CObject-wait_u7684_u533A_u522B"><a href="#1_u3001Thread-sleep_u3001Thread-yield_u548CObject-wait_u7684_u533A_u522B" class="headerlink" title="1、Thread.sleep、Thread.yield和Object.wait的区别"></a>1、Thread.sleep、Thread.yield和Object.wait的区别</h4><pre><code>a) Thread.yield: 通知scheduler,当前线程准备放弃当前正在使用的cpu。scheduler也可以忽略此通知。让出cpu,进入待执行状态。有可能继续获得cpu时间片。不会让给优先级低的线程。不释放锁。
+b) Thread.sleep: 释放cpu,可能会让给优先级低的线程。不释放锁。
+c) Object.wait:释放cpu,释放锁，必须在synchronized中执行。
+</code></pre><h4 id="2_u3001_u54EA_u4E9B_u539F_u56E0_u4F1A_u5BFC_u81F4_u5171_u4EAB_u53D8_u91CF_uFF0C_u5728_u5176_u4ED6_u7EBF_u7A0B_u65E0_u6CD5_u53CA_u65F6_u770B_u5230_u6700_u65B0_u503C_uFF1F"><a href="#2_u3001_u54EA_u4E9B_u539F_u56E0_u4F1A_u5BFC_u81F4_u5171_u4EAB_u53D8_u91CF_uFF0C_u5728_u5176_u4ED6_u7EBF_u7A0B_u65E0_u6CD5_u53CA_u65F6_u770B_u5230_u6700_u65B0_u503C_uFF1F" class="headerlink" title="2、哪些原因会导致共享变量，在其他线程无法及时看到最新值？"></a>2、哪些原因会导致共享变量，在其他线程无法及时看到最新值？</h4><pre><code>a) 在编译器中生成的指令顺序，可以与源码中的顺序不同。此外，编译器还会把变量保存在寄存器中而不是内存中。
+b) 处理器可以采用乱序或并行等方式来执行指令。
+c) 缓存可能会改变将写入变量提交到内存的次序。
+d) 保存在处理器本地缓存中的值，对于其他处理器是不可见的。
+</code></pre><h4 id="3_u3001volatile_u7684_u4F5C_u7528"><a href="#3_u3001volatile_u7684_u4F5C_u7528" class="headerlink" title="3、volatile的作用"></a>3、volatile的作用</h4><pre><code>a) 64位(double、long)原子操作
+b) 内存可见性,volatile变量不会被缓存在寄存器或者对其他处理器不可见的地方。JIT编译器生成的汇编指令,多了一行lock前缀的指令,作用是这个变量所在缓存行的数据写回到系统内存。每个处理器通过嗅探在总线上传播的数据来检查自己缓存的值是不是过期，置为无效。
+c) 禁止指令重排(Instruction Reorder),包含编译器和运行时指令重排。
+R) http://www.infoq.com/cn/articles/ftf-java-volatile
+</code></pre><h4 id="4_u3001ThreadLocal_u7684_u7528_u6CD5"><a href="#4_u3001ThreadLocal_u7684_u7528_u6CD5" class="headerlink" title="4、ThreadLocal的用法"></a>4、ThreadLocal的用法</h4><pre><code>关键字:静态key,每个线程不同的value; 线程局部变量。Thread对象有个实例变量java.lang.Thread.threadLocals,类型是ThreadLocalMap,是ThreadLocal的内部类。理解为map,ThreadLocal对象就是map的key。initialValue方法，在首次调用get时会被调用。
+常用：com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.localSqlMapSession、hibernate.session。
+ThreadLocal和Synchonized都用于解决多线程并发访问。但是ThreadLocal与synchronized有本质的区别。Synchronized用于线程间的数据共享，而ThreadLocal则用于线程间的数据隔离。
+</code></pre><h4 id="5_u3001IllegalMonitorStateException"><a href="#5_u3001IllegalMonitorStateException" class="headerlink" title="5、IllegalMonitorStateException"></a>5、IllegalMonitorStateException</h4><pre><code>wait/notify/notifyAll ,在没有获得锁的情况下,想要释放锁或是唤起其他线程获得锁。
+</code></pre><h4 id="6_u3001Thread-isInterrupted_28_29__u548C_interrupted_28_29_u533A_u522B"><a href="#6_u3001Thread-isInterrupted_28_29__u548C_interrupted_28_29_u533A_u522B" class="headerlink" title="6、Thread.isInterrupted() 和 interrupted()区别"></a>6、Thread.isInterrupted() 和 interrupted()区别</h4><pre><code>interrupted()静态方法,清理中断状态。isInterrupted,不清理中断状态。2个方法其实调用的同一个native方法
+private native boolean isInterrupted(boolean ClearInterrupted);
+</code></pre><h4 id="7_u3001_u4F7F_u7528notify_28_29__u8FD8_u662F_notifyAll_28_29"><a href="#7_u3001_u4F7F_u7528notify_28_29__u8FD8_u662F_notifyAll_28_29" class="headerlink" title="7、使用notify() 还是 notifyAll()"></a>7、使用notify() 还是 notifyAll()</h4><pre><code>关键字: block状态/wait状态
+单一条件的时候notify(),否则notifyAll()
+例: size = 1 的buffer,按照下面的顺序
+P1
+P2,P3 wait
+C1
+C2,C3 block
+C1-&gt;P2
+P2,C2,C3竞争 C2 wati C3wait
+P2-&gt;P3 P3wait
+3个都wait
+</code></pre><h4 id="8_u3001Synchronized_u5173_u952E_u5B57_u9501_u7684_u662F_u4EC0_u4E48_u5BF9_u8C61"><a href="#8_u3001Synchronized_u5173_u952E_u5B57_u9501_u7684_u662F_u4EC0_u4E48_u5BF9_u8C61" class="headerlink" title="8、Synchronized关键字锁的是什么对象"></a>8、Synchronized关键字锁的是什么对象</h4><pre><code>a) 对于同步方法，锁是当前示例的对象。
+b) 对于静态同步方法，锁是当前对象的Class对象。
+c) 对于同步方法块，锁是Synchonized括号里配置的对象。
+</code></pre><h4 id="9_u3001Callable_u548CRunnable_u6709_u4EC0_u4E48_u533A_u522B"><a href="#9_u3001Callable_u548CRunnable_u6709_u4EC0_u4E48_u533A_u522B" class="headerlink" title="9、Callable和Runnable有什么区别"></a>9、Callable和Runnable有什么区别</h4><pre><code>a) 两个接口,Callable的方法是call,Runnable的方法是run。
+b) Runnable作为基本的任务表示形式，但有一定的局限性：不能返回一个值或是跑出一个受检查的异常。
+c) Callable是一个更好的抽象：它认为主入口点(即call)将返回一个值,并可能抛出一个异常。
+d) Callable和Runnalbe都可以应用于Executors框架,Thread只支持Runnable。
+</code></pre><h4 id="10_u3001Synchronized_u548CLock_u7684_u533A_u522B"><a href="#10_u3001Synchronized_u548CLock_u7684_u533A_u522B" class="headerlink" title="10、Synchronized和Lock的区别"></a>10、Synchronized和Lock的区别</h4><pre><code>a) Lock是接口,Synchronized是关键字,内置锁。
+b) Synchronized是JVM软件层面的实现，Lock依赖于机器指令。CAS  ??
+c) Lock提供了轮询锁、定时锁、可中断锁、非结构加锁、读写锁、公平锁。
+d) Synchronized自动释放锁。lock一般要在finally手动释放。
+</code></pre><h4 id="11_u3001_u9884_u9632_u548C_u9632_u6B62_u6570_u636E_u5E93_u6B7B_u9501"><a href="#11_u3001_u9884_u9632_u548C_u9632_u6B62_u6570_u636E_u5E93_u6B7B_u9501" class="headerlink" title="11、预防和防止数据库死锁"></a>11、预防和防止数据库死锁</h4><pre><code>a) 避免并行的占用多个锁、多个资源。比如，某些业务可以不使用事务。
+b) 如果一定是事务的，尝试在事务中，获取锁的顺序一致。
+c) 缩小锁的范围，将大的事务分解为几个小事务。
+d) 缩短占锁的时间,事务时间。 
+d) 使用乐观锁代替独占锁。
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/01/multi-thread-interview/" data-id="cim4ozz9h0003qo0f756osoej" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hexo-guide" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/01/hexo-guide/" class="article-date">
+  <time datetime="2016-02-29T23:27:07.000Z" itemprop="datePublished">2016-03-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/01/hexo-guide/">hexo guide</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/01/hexo-guide/" data-id="cim4ozz9o0006qo0ffq5mam4p" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-centos-wordpress" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/02/18/centos-wordpress/" class="article-date">
@@ -102,7 +341,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/18/centos-wordpress/" data-id="cikuhu67d0000p2jj8nh56qlu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/18/centos-wordpress/" data-id="cim4ozz9t0008qo0fwpxie1h0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -144,7 +383,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/04/nio/" data-id="cikuhu6870002p2jjfjd4noan" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/04/nio/" data-id="cim4ozz9e0002qo0ffrh5ea8t" class="article-share-link">Share</a>
       
       
     </footer>
@@ -215,7 +454,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/03/written-at-the-begining-of-2016/" data-id="cikuhu6850001p2jjrscs9aoa" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/03/written-at-the-begining-of-2016/" data-id="cim4ozz9c0001qo0fg5ezipcs" class="article-share-link">Share</a>
       
       
     </footer>
@@ -260,7 +499,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/03/hello-world/" data-id="cikuhu6880003p2jj0stglcut" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/03/hello-world/" data-id="cim4ozz9r0007qo0fyh9bzn8f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -287,7 +526,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a></li></ul>
     </div>
   </div>
 
@@ -300,19 +539,23 @@
       <ul>
         
           <li>
-            <a href="/2016/02/18/centos-wordpress/">centos_wordpress</a>
+            <a href="/2016/03/12/java-interview/">java-interview</a>
           </li>
         
           <li>
-            <a href="/2016/02/04/nio/">NIO</a>
+            <a href="/2016/03/10/architectrue/">architectrue</a>
           </li>
         
           <li>
-            <a href="/2016/02/03/written-at-the-begining-of-2016/">written at the begining of 2016</a>
+            <a href="/2016/03/02/jvm/">深入理解Java虚拟机笔记</a>
           </li>
         
           <li>
-            <a href="/2016/02/03/hello-world/">Hello World</a>
+            <a href="/2016/03/01/multi-thread-interview/">Java多线程面试题汇集</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/01/hexo-guide/">hexo guide</a>
           </li>
         
       </ul>
