@@ -1292,6 +1292,21 @@ pre .javascript .function {
     color: #fff;
   }
 }
+.article-entry strong {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+}
+.article-entry h1,
+.article-entry h2,
+.article-entry h3,
+.article-entry h4,
+.article-entry h5,
+.article-entry h6 {
+  line-weight: 1.1em;
+  margin: 1.1em 0;
+  color: #000;
+}
 @media screen and (min-width: 768px) {
   #sidebar {
     display: inline;
